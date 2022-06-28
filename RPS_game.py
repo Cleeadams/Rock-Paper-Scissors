@@ -118,5 +118,10 @@ def human(prev_opponent_play):
     return play
 
 
+def connor(prev_opponent_play, count=[0]):
+    choices = {0: 'R', 1: 'P', 2:'S'}
+    count[0] += 1
+    return choices[count[0] % 3]
+
 def random_player(prev_opponent_play):
     return random.choice(['R', 'P', 'S'])
