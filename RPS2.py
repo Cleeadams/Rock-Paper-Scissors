@@ -18,9 +18,9 @@ def player(prev_play, opponent_history=[], my_play=[]):
         Xtest = X.iloc[-1:]
 
         # Begin Decision Tree Model
-        X_train, test_x, y_train, test_lab = train_test_split(X, y, test_size=0.5, random_state=42)
-        clf = DecisionTreeClassifier(max_depth=4, random_state=42)
-        clf.fit(X_train, y_train)
+        X_train, test_x, y_train, test_lab = train_test_split(X, y, test_size=0.2, random_state=42)
+        clf = DecisionTreeClassifier(max_depth=2, random_state=42)
+        clf.fit(X, y)
         next_move = clf.predict(Xtest)
         y.loc[len(y.index)] = next_move[0]
         move = pd.Series.tolist(y.idxmax(1)[-1:])[0]
@@ -31,14 +31,14 @@ def player(prev_play, opponent_history=[], my_play=[]):
         else:
             player_choice = 'R'
 
-        print(player_choice)
+        # print(player_choice)
         my_play.append(player_choice)
     else:
         player_choice = random.choice(['R', 'P', 'S'])
         my_play.append(player_choice)
     return player_choice
 
-play(player, connor, 12)
+play(player, connor, 2000)
 
 
 

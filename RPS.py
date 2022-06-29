@@ -1,5 +1,7 @@
 
 import random
+
+import sklearn.metrics
 from IPython.display import display
 import math
 import pandas as pd
@@ -21,10 +23,13 @@ def player(prev_play, opponent_history=[], my_play=[]):
         Xtest = X.iloc[-1:]
 
         # Begin Decision Tree Model
-        X_train, test_x, y_train, test_lab = train_test_split(X, y, test_size=0.7, random_state=42)
+        X_train, test_x, y_train, test_lab = train_test_split(X, y, test_size=0.2, random_state=42)
         # clf = DecisionTreeClassifier(max_depth=4, random_state=42)
-        clf = RandomForestClassifier(n_estimators=100)
+        clf = RandomForestClassifier(n_estimators=100,max_depth=3,random_state=42)
         clf.fit(X_train, y_train)
+        predict_train = clf.predict(test_x)
+        # sklearn.metrics.roc
+        clf.fit(X, y)
         next_move = clf.predict(Xtest)
         y.loc[len(y.index)] = next_move[0]
         move = pd.Series.tolist(y.idxmax(1)[-1:])[0]
@@ -41,7 +46,7 @@ def player(prev_play, opponent_history=[], my_play=[]):
         my_play.append(player_choice)
     return player_choice
 
-play(player, abbey, 1000)
+play(player, abbey, 100)
 
 
 
