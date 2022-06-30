@@ -6,7 +6,6 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 
 def trainers(history, response):
-    global X, y
     response.append('')
     df = pd.DataFrame({'History': history, 'Response': response})
     X = pd.get_dummies(df, columns=['History']).drop(['Response'], axis=1)
@@ -17,6 +16,7 @@ def trainers(history, response):
     return X, y, Xtest
 
 def trees(history, response):
+    global X, y
     X, y, Xtest = trainers(history, response)
     clf = DecisionTreeClassifier(max_depth=2, random_state=42)
     clf.fit(X, y)
