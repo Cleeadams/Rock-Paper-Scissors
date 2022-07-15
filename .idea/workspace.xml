@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac7eebad-2df3-4a65-b58c-84573df9dcd5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/RPS_tensorflow.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RPS.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/RPS.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RPS_fun.py" beforeDir="false" afterPath="$PROJECT_DIR$/RPS_fun.py" afterDir="false" />
@@ -32,19 +33,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Connor/OneDrive/Desktop/GitHub/Python/Rock-Paper-Scissors/RPS_fun.py",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Connor/OneDrive/Desktop/GitHub/Python/Rock-Paper-Scissors/RPS_fun.py&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.RPS_fun">
     <configuration name="RPS" type="PythonConfigurationType" factoryName="Python">
       <module name="Rock-Paper-Scissors" />
@@ -150,7 +151,8 @@
       <option name="presentableId" value="Default" />
       <updated>1656129195880</updated>
       <workItem from="1656483332063" duration="9579000" />
-      <workItem from="1656559574520" duration="6123000" />
+      <workItem from="1656559574520" duration="12989000" />
+      <workItem from="1657857529038" duration="1382000" />
     </task>
     <servers />
   </component>
@@ -170,7 +172,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Rock_Paper_Scissors$main.coverage" NAME="main Coverage Results" MODIFIED="1656560330096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Rock_Paper_Scissors$RPS_fun.coverage" NAME="RPS_fun Coverage Results" MODIFIED="1656565280818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Rock_Paper_Scissors$RPS_fun.coverage" NAME="RPS_fun Coverage Results" MODIFIED="1657857567635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RPS2_py$RPS2.coverage" NAME="RPS2 Coverage Results" MODIFIED="1656485835953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RPS2_py$main.coverage" NAME="main Coverage Results" MODIFIED="1656531195166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
